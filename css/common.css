@@ -1,0 +1,320 @@
+@font-face {
+    font-family: 'WenYue-ShengHuoJiaTi-J';
+    src: url('fonts/WenYue-ShengHuoJiaTi-J.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Futura-Medium-6';
+    src: url('fonts/Futura-Medium-6.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+    border: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    letter-spacing: 1px;
+    /* text-transform: uppercase; */
+}
+a {
+    text-decoration: none;
+}
+:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+::-webkit-scrollbar {
+    height: 4px;
+    width: 6px;
+}
+::-webkit-scrollbar-thumb {
+    transition: all 0.25s ease 0s;
+    background: #99e640;
+    background-size: 100% 100%;
+}
+::-webkit-scrollbar-thumb:hover {
+    height: 6px;
+    width: 6px;
+    transition: all 0.25s ease 0s;
+}
+::-webkit-scrollbar-corner, ::-webkit-scrollbar-track {
+    background: transparent;
+}
+/*
+::selection {
+    background: #99e640;  
+    color: #000;
+}
+::-moz-selection {
+    background: #99e640;
+    color: #000;
+}
+::-webkit-selection {
+    background: #99e640;
+    color: #000;
+}*/
+body {
+	color:#FFF;
+	word-break:break-all;
+	font-family: Futura-Medium-6,WenYue-ShengHuoJiaTi-J,-apple-system,BlinkMacSystemFont,PingFang-SC-Regular,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
+    font-size: 16px;
+
+    overflow: scroll;
+    background: #131417 url(img/bg.jpg);
+    background-attachment: fixed;
+    background-position: 60%;
+    background-size: cover;
+}
+.layout-header {
+    position: relative;
+    padding: 10px;
+    width: 980px;
+    margin: 0 auto;
+}
+.layout-header img {
+    width: 52px;;
+}
+/*
+.links {
+    color: #fff;
+    position: relative;
+    z-index: 1;
+    font-size: 1em;
+    left: 20px;
+}
+.layout-header a::Before {
+    content: '';
+    background: #000;
+    position: absolute;
+    top: -10px;
+    bottom: -10px;
+    left: -20px;
+    right: -20px;
+    margin: 0;
+    z-index: -1;
+}*/
+
+
+
+.layout-content {
+    padding: 0 10px;
+    width: 960px;
+    margin: 0 auto;
+}
+.description {
+    text-align: center;
+    line-height: 32px;
+    font-size: 1.1em;
+    margin: 0 0 30px 0;
+    letter-spacing: 1px;
+    text-shadow: #00000069 0.1em 0.1em 0.1em;
+    color: #bdbdbd;
+}
+.input-group {
+    width: 100%;
+}
+.btn1 {
+    width: 35%;
+    float: right;    
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;    
+}
+.btn2 {
+    width: 63%;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+}
+select#id, input#key {
+    padding: 10px 10px;
+    border-radius: 10px;
+    background: #222222db;
+    color: #9e9e9e;
+    height: 38px;
+}
+select#id {
+    padding: 10px 15px;
+    width: 135px;
+}
+input#keep {
+    display: none;
+}
+/*
+label {
+display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #9c27b0;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+label::before {
+    display: block;
+    content: '';
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 1px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all .3s;
+}
+label::after {
+    display: block;
+    content: '';
+    width: 0;
+    height: 100%;
+    background: #202123;
+    transition: all .3s;
+    border-radius: 10px;
+}*/
+input#key {
+    width: 81%;
+    float: right;
+    margin-left: 20px;
+}
+.bright-btn {
+    background: #9c27b0;
+    color: #fff;
+    border-radius: 9px;
+    float: left;
+    cursor: pointer;
+    height: 38px;
+    line-height: 38px;
+    width: 98px;
+    text-align: center;
+}
+#article-wrapper, textarea#kw-target {
+    border: 0;
+    background: #222222db;
+    border-radius: 20px;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    color: #ffffffd6;
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 寰蒋闆呴粦, Arial, sans-serif;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+#article-wrapper {
+    margin-bottom: 20px;
+    margin-top: 20px;
+    overflow: auto;
+    height: 420px;
+    padding: 10px 20px;
+}
+#article-wrapper li {
+    margin: 10px 0;
+    list-style: none;
+}
+pre {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", 寰蒋闆呴粦, Arial, sans-serif;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    line-height: 32px;
+}
+pre img {
+    border-radius: 20px;
+}
+#clean {
+    float: left;
+}
+.ai-btn {
+    background: #99e640;
+    float: right;
+    margin: 20px 0;
+    cursor: pointer;
+    color: #000;
+}
+textarea#kw-target {
+    height: 100px;
+    margin-top: 20px;
+}
+.bright-btn:hover {
+    background: #ffeb3b;
+    color: #000;
+}
+.layui-layer-dialog .layui-layer-content {
+    color: #000;
+}
+.article-content p {
+    line-height: 30px;
+}
+.article-content img {
+    width: 100%;;
+}
+.layui-layer-msg {
+    min-width: 180px;
+    box-shadow: none;
+    border-radius: 20px !important;
+    background: #fff !important;
+    opacity: 0.8 !important;
+}
+.layui-layer-dialog .layui-layer-content {
+    font-size: 1em !important;
+}
+.layui-layer-shade {
+    display: none;
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+body {
+    font-family: Futura-Medium-6,-apple-system,BlinkMacSystemFont,PingFang-SC-Regular,Hiragino Sans GB,Microsoft Yahei,Arial,sans-serif;
+    font-size: 16px;
+    background: linear-gradient(0deg, rgb(0, 204, 102), rgb(0, 51, 255))
+}
+.layout-content {
+    width: auto;
+}
+.layout-header {
+    width: auto;
+    text-align: center
+}
+.description {
+    font-size: .5em;
+    margin: 0 0 10px 0;
+    line-height: 16px;
+    color: #FFF;
+}
+.input-group { 
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.btn1, .btn2 {
+     width: 100%; 
+}
+.btn1 {
+     margin: 10px 0;
+}
+input#key {
+    margin-left: 10px;
+}
+.ai-btn {
+    margin: 10px 0;
+}
+#article-wrapper {
+    margin-bottom: 39px;
+        height: 460px;
+}
+select#id, input#key {
+    font-size: .9em;
+}
+}
